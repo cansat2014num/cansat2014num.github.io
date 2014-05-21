@@ -692,45 +692,86 @@ Version 2 ############ -->
 		
 <!-- PORTFOLIO  HEADER -->
 <!-- HERE TITLE GOES WITH FILTERS MENU IN RIGHT SIDE-->
+		
+<!-- PORTFOLIO  HEADER -->
+<!-- HERE TITLE GOES WITH FILTERS MENU IN RIGHT SIDE-->
 <header class="page-header">
 		<div class="container">
 			<div class="row-fluid">
-	
-		<div class="span6">
-			<h3>RECENT WORKS</h3>
+	   	<div class="span6">
+			<h3>DATA <small>боловсруулалт</small></h3>
 		</div>
 		
+		<div class="text-center">
+		<hr half>
+		<hr half_rule>
 		<div class="span6 hidden-phone">		
 		<!-- PROJECTS FILTER-->
 		<!-- just add your TAG to ==> data-filter=".yourtaghere" 
 		for SHOW ALL ==> data-filter="*" in button filter -->	
 		<!-- and then add your same TAG to portfolio item class="box" 
 		==> class="span4  project-item box YOURTAGHERE" -->
-		
-				<div class="text-right">
+		<div class="proj">
+		 <div id="filters">
+			<div class="btn-group">				
+				<a href="#Data-section" class="ione-col active btn " data-filter="*"><i class="icon icon-refresh"></i> Show All </a>
+				<a href="#" data-filter=".graphics" class="btn ione-col"><i class="icon icon-map-marker"></i>Location</a>
+			</div>
+			</div>
+			</div>
+			
+			
+			<div class="btn-group">
+			<div class="btn-group dropdown">
+				<a class="btn dropdown-toggle" data-toggle="dropdown" href="#"> <i class="icon-cog"></i> <span class="caret"></span>Утга</a>
+				
+				<ul class="dropdown-menu">
 					<div class="proj">
-						<div id="filters">
-							<div class="btn-toolbar">
-								<div class="btn-group">
-								<a href="./index/BOOTSCROLLER   responsive parallax Bootstrap template.htm" data-filter="*" class="ione-col active btn btn-primary btn-large">Show All</a>
-								<a href="./index/BOOTSCROLLER   responsive parallax Bootstrap template.htm" data-filter=".graphics" class="btn ione-col btn-primary btn-large">Graphics</a>
-								<a href="./index/BOOTSCROLLER   responsive parallax Bootstrap template.htm" data-filter=".web" class="btn ione-col btn-primary btn-large">Web</a>
-								<a href="./index/BOOTSCROLLER   responsive parallax Bootstrap template.htm" data-filter=".branding" class="btn ione-col btn-primary btn-large">Branding</a>
-								<a href="./index/BOOTSCROLLER   responsive parallax Bootstrap template.htm" data-filter=".seo" class="btn ione-col btn-primary btn-large">SEO</a>
-								</div>
-							</div>
-						</div>
+					<div id="filters">
+					<li><a href="#" data-filter=".acc_all" class="ione-col"> ACC_showAll </a></li>
+					<li><a href="#" data-filter=".acc_x" class="ione-col"> ACC_X </a></li>
+					<li><a href="#" data-filter=".acc_y" class="ione-col"> ACC_Y </a></li>
+					<li><a href="#" data-filter=".acc_z" class="ione-col"> ACC_Z </a></li>
+					<li><a href="#" data-filter=".graphics" class="ione-col"> Orien-showAll</a></li>
+					<li><a href="#" data-filter=".graphics" class="ione-col"> Orien_Roll </a></li>
+					<li><a href="#" data-filter=".graphics" class="ione-col"> Orien_Pitch</a></li>
+					<li><a href="#" data-filter=".graphics" class="ione-col"> Orien_Azi </a></li>
+					<li><a href="#" data-filter=".graphics" class="ione-col"> Температур </a></li>
+					<li><a href="#" data-filter=".graphics" class="ione-col"> Даралт </a></li>
+					<li><a href="#" data-filter=".graphics" class="ione-col"> Gyroscope </a></li>
 					</div>
+					</div>
+				</ul>					
+				</div>
+				<div class="btn-group dropdown">
+				<a class="btn dropdown-toggle" data-toggle="dropdown" href="#"> <i class="icon-cog"></i> <span class="caret"></span>График</a>
+				<ul class="dropdown-menu">
+					<div class="proj">
+					<div id="filters">
+					<li><a href="#"data-filter=".web"  class="ione-col "> ACC_showAll <small class="text-danger">G</small> </a></li>
+					<li><a href="#" data-filter=".web" class="ione-col"> ACC_X </a></li>
+					<li><a href="#" data-filter=".web" class="ione-col"> ACC_Y </a></li>
+					<li><a href="#" data-filter=".web" class="ione-col"> ACC_Z </a></li>
+					<li><a href="#" data-filter=".web" class="ione-col"> Orien-showAll</a></li>
+					<li><a href="#" data-filter=".web" class="ione-col"> Orien_Roll </a></li>
+					<li><a href="#" data-filter=".web" class="ione-col"> Orien_Pitch</a></li>
+					<li><a href="#" data-filter=".web" class="ione-col"> Orien_Azi </a></li>
+					<li><a href="#" data-filter=".web" class="ione-col"> Температур </a></li>
+					<li><a href="#" data-filter=".web" class="ione-col"> Даралт </a></li>
+					<li><a href="#" data-filter=".web" class="ione-col"> Gyroscope </a></li>
+					</div>
+					</div>
+				</ul>
+				</div>
 				</div>
 			
 			<!--END: PROJECTS FILTER-->
+		</div>
 		</div>
 		
 		</div><!--/ROW-->
 </div><!--/CONTAINER-->
 </header><!-- / PORTFOLIO SECTION HEADER-->
-
-
 
 
 
@@ -744,39 +785,26 @@ Version 2 ############ -->
 
 		
 		<!-- portfolio item -->
-		<div class="span4  project-item seo graphics box  isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(0px, 0px, 0px);">
+		<div class="span4  project-item acc_x acc_all box  isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(0px, 0px, 0px);">
 			<div class="thumbnail">
 		
 				<!-- IMAGE CONTAINER-->
-				<a data-gal="prettyPhoto[gallery]" href="./index/indexb.png" class="img-wrap">
-					<img src="./index/indexb.png" alt="iPhonegraphy"> 
-				</a>
+				
+					 <center><h2 class="text-info" >Accelerometer Хурдатгал </h2> </center>
+					 <h2><small>Acc_x</small> <span id="Acc_x"> <small>m/c</small> </span> </h2> 
+				
 				<!--END IMAGE CONTAINER-->
 						 
 				<!-- CAPTION -->
 				<div class="caption">
 				<!-- TITLE -->
-					<h3 class="">Project title</h3>
+					<center><h3 class="text-success">X тэнхлэгийн утга</h3></center>
 				<!-- / TITLE -->
 					
 				<!-- DESCRIPTION -->
-					<p class="caption-descr">
-					This project presents beautiful style graphic &amp; design. OnePager provides modern features
-					</p>
-				<!-- / DESCRIPTION -->		
 					
-				<!--BUTTONS-->
-				<div class="row-fluid">
-					<div class="span6">
-						<a data-gal="prettyPhoto[gallery]" href="./index/indexb.png" class="btn btn-success btn-block"><i class="fa-icon-zoom-in "></i> Enlarge</a>
-					</div>
-					<div class="span6">
-						<a class="btn btn-primary btn-block" href="http://wrapbootstrap.com/theme/scroll-strap-modern-parallax-one-pager-WB0XLB528">
-						<i class="fa-icon-link"></i> Visit site</a>
-					</div>
-				</div>
-				<!--/ BUTTONS-->
-							   
+				<!-- / DESCRIPTION -->		
+												   
 				</div> 
 				<!--END CAPTION -->
 		
@@ -786,39 +814,20 @@ Version 2 ############ -->
 		<!-- END: portfolio item -->
 		
 		<!-- portfolio item -->
-		<div class="span4  project-item seo box  isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(400px, 0px, 0px);">
+		<div class="span4  project-item acc_y acc_all box  isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(400px, 0px, 0px);">
 			<div class="thumbnail">
 			
 				<!-- IMAGE CONTAINER-->
-				<a data-gal="prettyPhoto[gallery]" href="./index/indexb.png" class="img-wrap">
-					<img src="./index/indexb.png" alt="iPhonegraphy"> 
-				</a>
+				 <center><h2 class="text-warning" >Accelerometer Хурдатгал </h2> </center>
+				<h2><small>Acc_y</small> <span id="Acc_y"> <small>m/c</small> </span></h2>
 				<!--END IMAGE CONTAINER-->
 						 
 				<!-- CAPTION -->
 				<div class="caption">
 				<!-- TITLE -->
-					<h3 class="">Project title</h3>
-				<!-- / TITLE -->
-					
-				<!-- DESCRIPTION -->
-					<p class="caption-descr">
-					This project presents beautiful style graphic &amp; design. OnePager provides modern features
-					</p>
-				<!-- / DESCRIPTION -->		
-					
-				<!--BUTTONS-->
-				<div class="row-fluid">
-					<div class="span6">
-						<a data-gal="prettyPhoto[gallery]" href="./index/indexb.png" class="btn btn-success btn-block"><i class="fa-icon-zoom-in "></i> Enlarge</a>
-					</div>
-					<div class="span6">
-						<a class="btn btn-primary btn-block" href="http://wrapbootstrap.com/theme/scroll-strap-modern-parallax-one-pager-WB0XLB528">
-						<i class="fa-icon-link"></i> Visit site</a>
-					</div>
-				</div>
-				<!--/ BUTTONS-->
-							   
+					<center><h3 class="">Y тэнхлэгийн утга</h3></center>
+				<!-- / TITLE -->					
+											   
 				</div> 
 				<!--END CAPTION -->
 			
@@ -828,38 +837,22 @@ Version 2 ############ -->
 		<!-- END: portfolio item -->
 		
 		<!-- portfolio item -->
-		<div class="span4  project-item graphics web box  isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(800px, 0px, 0px);">
+		<div class="span4  project-item acc_z acc_all box  isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(800px, 0px, 0px);">
 			<div class="thumbnail">
 			
+				
 				<!-- IMAGE CONTAINER-->
-				<a data-gal="prettyPhoto[gallery]" href="./index/indexb.png" class="img-wrap">
-					<img src="./index/indexb.png" alt="iPhonegraphy"> 
-				</a>
+				<center><h2 class="text-success" >Accelerometer Хурдатгал </h2> </center>
+				<h2><small>Acc_z</small> <span id="Acc_z"> <small>m/c</small> </span></h2>
 				<!--END IMAGE CONTAINER-->
 						 
 				<!-- CAPTION -->
 				<div class="caption">
 				<!-- TITLE -->
-					<h3 class="">Project title</h3>
+					<center><h3 class="">Z тэнхлэгийн утга</h3></center>
 				<!-- / TITLE -->
 					
-				<!-- DESCRIPTION -->
-					<p class="caption-descr">
-					This project presents beautiful style graphic &amp; design. OnePager provides modern features
-					</p>
-				<!-- / DESCRIPTION -->		
-					
-				<!--BUTTONS-->
-				<div class="row-fluid">
-					<div class="span6">
-						<a data-gal="prettyPhoto[gallery]" href="./index/indexb.png" class="btn btn-success btn-block"><i class="fa-icon-zoom-in "></i> Enlarge</a>
-					</div>
-					<div class="span6">
-						<a class="btn btn-primary btn-block" href="http://wrapbootstrap.com/theme/scroll-strap-modern-parallax-one-pager-WB0XLB528">
-						<i class="fa-icon-link"></i> Visit site</a>
-					</div>
-				</div>
-				<!--/ BUTTONS-->
+							<!--/ BUTTONS-->
 							   
 				</div> 
 				<!--END CAPTION -->
@@ -998,6 +991,7 @@ Version 2 ############ -->
 		</div><!--/innner folio row-->
 	</div><!-- /container-folio row ufilter!-->	
 </div>
+<!--/CONTAINER-->
 <!--/CONTAINER-->
 </section><!--/ portfolio section-->
 
