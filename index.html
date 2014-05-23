@@ -792,7 +792,7 @@ Version 2 ############ -->
 				<!-- IMAGE CONTAINER-->
 				
 					 <center><h2 class="text-info" >Accelerometer Хурдатгал </h2> </center>
-					<center> <h2><small>Acc_x</small> <span id="Acc_x">  </span><small>m/c</small>  </h2> </center>
+					<center> <h2><small>Acc_x</small> <span id="Acc_x">  </span><small>m/c^2</small>  </h2> </center>
 				
 				<!--END IMAGE CONTAINER-->
 						 
@@ -820,7 +820,7 @@ Version 2 ############ -->
 			
 				<!-- IMAGE CONTAINER-->
 				 <center><h2 class="text-warning" >Accelerometer Хурдатгал </h2> </center>
-				<center><h2><small>Acc_y</small> <span id="Acc_y"></span><small>m/c</small> </h2></center>
+				<center><h2><small>Acc_y</small> <span id="Acc_y"></span><small>m/c^2</small> </h2></center>
 				<!--END IMAGE CONTAINER-->
 						 
 				<!-- CAPTION -->
@@ -844,7 +844,7 @@ Version 2 ############ -->
 				
 				<!-- IMAGE CONTAINER-->
 				<center><h2 class="text-success" >Accelerometer Хурдатгал </h2> </center>
-				<center><h2><small>Acc_z</small> <span id="Acc_z"> </span><small>m/c</small> </h2></center>
+				<center><h2><small>Acc_z</small> <span id="Acc_z"> </span><small>m/c^2</small> </h2></center>
 				<!--END IMAGE CONTAINER-->
 						 
 				<!-- CAPTION -->
@@ -1243,6 +1243,7 @@ Version 2 ############ -->
 			<!-- portfolio item Temperature-->
 		<div class="span6  project-item tempe_T box  isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(400px, 440px, 0px);">
 			<div class="thumbnail">
+				<iframe width="500" height="300" scrolling="no" frameborder="no" src="https://www.google.com/fusiontables/embedviz?viz=GVIZ&amp;t=LINE&amp;containerId=googft-gviz-canvas&amp;isXyPlot=true&amp;q=select+col3%2C+col14+from+1TJc01--aY9rH5H8NZl98Aw5H8tbQPcktxuXUAP3M&amp;qrs=+where+col3+%3E%3D+&amp;qre=+and+col3+%3C%3D+&amp;qe=+order+by+col3+asc+limit+31&amp;width=500&amp;height=300"></iframe>
 			</div>			
 		<!-- END: THUMBNAIL -->
 		</div>
@@ -1252,6 +1253,7 @@ Version 2 ############ -->
 			<!-- portfolio item Даралт-->
 		<div class="span6  project-item pre_T box  isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(400px, 440px, 0px);">
 			<div class="thumbnail">
+				<iframe width="500" height="300" scrolling="no" frameborder="no" src="https://www.google.com/fusiontables/embedviz?viz=GVIZ&amp;t=LINE&amp;containerId=googft-gviz-canvas&amp;isXyPlot=true&amp;q=select+col3%2C+col13+from+1TJc01--aY9rH5H8NZl98Aw5H8tbQPcktxuXUAP3M&amp;qrs=+where+col3+%3E%3D+&amp;qre=+and+col3+%3C%3D+&amp;qe=+order+by+col3+asc+limit+31&amp;width=500&amp;height=300"></iframe>
 			</div>			
 		<!-- END: THUMBNAIL -->
 		</div>
@@ -1259,6 +1261,16 @@ Version 2 ############ -->
 		
 		
 			<!-- portfolio item Gyro-->
+		<div class="span6  project-item mag_T box  isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(400px, 440px, 0px);">
+			<div class="thumbnail">
+				<iframe width="500" height="300" scrolling="no" frameborder="no" src="https://www.google.com/fusiontables/embedviz?viz=GVIZ&amp;t=LINE&amp;containerId=googft-gviz-canvas&amp;isXyPlot=true&amp;q=select+col3%2C+col15%2C+col16%2C+col17+from+1TJc01--aY9rH5H8NZl98Aw5H8tbQPcktxuXUAP3M&amp;qrs=+where+col3+%3E%3D+&amp;qre=+and+col3+%3C%3D+&amp;qe=+order+by+col3+asc+limit+31&amp;width=500&amp;height=300"></iframe>
+			</div>			
+		<!-- END: THUMBNAIL -->
+		</div>
+		<!-- END: portfolio item -->
+		
+		
+		<!-- portfolio item Opened-->
 		<div class="span6  project-item mag_T box  isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(400px, 440px, 0px);">
 			<div class="thumbnail">
 			</div>			
@@ -1966,6 +1978,44 @@ Version 2 ############ -->
         xively.datastream.subscribe( feedID, datastreamID, function ( event , datastream_updated ) {
           // Display the current value from the updated datastream
           $(selector14).html( datastream_updated["current_value"] );
+        });
+
+      });
+
+      // WARNING: Code here will continue executing while we get the datastream data from Xively, use the function associated with datastream.get to work with the data, when the request is complete
+    });
+  </script>
+  
+  
+        <!Open>
+  <script>
+	//ACC_X!!!!!!!
+    // Make sure the document is ready to be handled
+    $(document).ready(function($) {
+
+      // Set the Xively API key (https://xively.com/users/YOUR_USERNAME/keys)
+      xively.setKey( "FIQC5G1O0ds1spuRuvkitqNsJQch7m90YhOv9MtvL1iK0nFi" );
+
+      // Replace with your own values
+      var feedID        = 1689765045,          // Feed ID (the last number on the URL on the feed page on Xively)
+          datastreamID  = "4";       // Datastream ID
+          selector15      = "#Opened";   // Your element on the page - takes any valid jQuery selector
+		  
+
+      // Get datastream data from Xively
+      xively.datastream.get (feedID, datastreamID, function ( datastream ) {
+        // WARNING: This code is only executed when we get a response back from Xively, it will likely execute after the rest your script
+        // NOTE: The variable "datastream" will contain all the Datastream information as an object. The structure of Datastream objects can be found at: 
+        // https://xively.com/dev/docs/api/quick_reference/api_resource_attributes/#datastream
+
+
+        // Display the current value from the datastream
+        $(selector15).html( datastream["current_value"] );
+
+        // Getting realtime! The function associated with the subscribe method will be executed every time there is an update to the datastream
+        xively.datastream.subscribe( feedID, datastreamID, function ( event , datastream_updated ) {
+          // Display the current value from the updated datastream
+          $(selector15).html( datastream_updated["current_value"] );
         });
 
       });
